@@ -101,16 +101,22 @@
                     <label for="date-out">Дата выезда</label>
                     <input type="text" name="date" id="date-out">
                 </fieldset>
-                <fieldset class="people">
-                    <label for="adults">Взрослые</label>
-                    <label for="children">Дети</label>
-                    <div class="number-of-people">
-                        <a class="min" href="#">-</a>
-                        <input type="text" name="adults" id="adults">
-                        <a class="max" href="#">+</a>
-                        <a class="min" href="#">-</a>
-                        <input type="text" name="children" id="children">
-                        <a class="max" href="#">+</a>
+                <fieldset class="number-of-people">
+                    <div class="adults">
+                        <label for="adults">Взрослые</label>
+                        <div class="value">
+                            <a class="min" href="#">-</a>
+                            <input type="text" name="adults" id="adults">
+                            <a class="max" href="#">+</a>
+                        </div>
+                    </div>
+                    <div class="children">
+                        <label for="children">Дети</label>
+                        <div class="value">
+                            <a class="min" href="#">-</a>
+                            <input type="text" name="children" id="children">
+                            <a class="max" href="#">+</a>
+                        </div>
                     </div>
                 </fieldset>
                 <input type="submit" value="Найти">
