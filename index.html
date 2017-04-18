@@ -78,17 +78,17 @@
                 </li>
                 <li class="fact-item">
                     <h2 class="fact-title">Красивая дорога</h2>
-                    <span class="feature-number">— №4 —</span>
+                    <span class="fact-number">— №4 —</span>
                     <p class="fact-description">Ехать в Седону из Лас-Вегаса совсем не скучно!</p>
                 </li>
                 <li class="fact-item">
                     <h2 class="fact-title">Мало туристов</h2>
-                    <span class="feature-number">— №5 —</span>
+                    <span class="fact-number">— №5 —</span>
                     <p class="fact-description">Большинство едет в Гранд-Каньон и толпится там</p>
                 </li>
             </ul>
             <div class="search-promo">
-                <h2 class="search-promo-title">Заинтересовались?</h2>
+                <span class="search-promo-title">Заинтересовались?</span>
                 <p class="search-promo-title">Укажите предполагаемые даты поездки,<br>и мы покажем вам лучшие предложения гостиниц в седоне</p>
                 <a class="search-promo-btn" href="#">Поиск гостиниц в седоне</a>
             </div>
@@ -101,15 +101,13 @@
                     <label for="date-out">Дата выезда</label>
                     <input type="text" name="date" id="date-out">
                 </fieldset>
-                <fieldset class="number-of-people">
-                    <div class="adults">
-                        <label for="adults">Взрослые</label>
+                <fieldset class="people">
+                    <label for="adults">Взрослые</label>
+                    <label for="children">Дети</label>
+                    <div class="number-of-people">
                         <a class="min" href="#">-</a>
                         <input type="text" name="adults" id="adults">
                         <a class="max" href="#">+</a>
-                    </div>
-                    <div class="children">
-                        <label for="children">Дети</label>
                         <a class="min" href="#">-</a>
                         <input type="text" name="children" id="children">
                         <a class="max" href="#">+</a>
@@ -125,8 +123,8 @@
 
         <footer class="footer">
             <div class="footer-hashtag">
-                <h2 class="visit-sedona">#visitsedona</h2>
-              </div>
+                <a class="hashtag" href="#">#visitsedona</a>
+            </div>
             <div class="footer-social">
                 <a class="social-btn" href="#">Твиттер</a>
                 <a class="social-btn" href="#">Фейсбук</a>
