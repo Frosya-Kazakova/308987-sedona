@@ -1,0 +1,111 @@
+body {
+    font-size: 14px;
+    line-height: 21px;
+    color: #333333;
+    font-weight: normal;
+    font-family: "PT Sans", sans-serif;
+    text-transform: uppercase;
+}
+
+h2 {
+    font-size: 21px;
+    line-height: 26px;
+    color: #000000;
+    font-weight: bold;
+}
+
+.feature {
+    color: #ffffff;
+}
+
+.main-navigation,
+.search-promo-title {
+    color: #333333;
+    font-weight: bold;
+}
+
+.search-promo-title {
+    font-size: 30px;
+}
+
+.search-promo-btn {
+    font-size: 21px;
+    font-weight: bold;
+    color: #ffffff;
+
+}
+
+.search-form,
+.hashtag {
+    font-size: 21px;
+    font-weight: bold;
+    color: #000000;
+}
+
+input[type=submit] {
+    font-size: 21px;
+    color: #ffffff;
+    font-weight: bold;
+    text-transform: uppercase;
+}
+
+input[type=checkbox] + label {
+    color: #ffffff;
+}
+
+input[type=range] + label {
+    font-size: 16px;
+    color: #ffffff;
+    font-weight: bold;
+}
+
+.filter {
+    font-size: 14px;
+    color: #ffffff;
+    font-weight: normal;
+}
+
+.filter-title {
+    font-size: 16px;
+    font-weight: bold;
+}
+
+.copyright {
+    color: #000000;
+}
+
+.search-result-number,
+.card-item-title {
+    font-size: 21px;
+    color: #000000;
+    font-weight: bold;
+}
+
+.sort-results-by-title {
+    font-size: 12px;
+    color: #000000;
+
+}
+
+.sort-by {
+    font-size: 12px;
+    color: rgba(0, 0, 0, 0.3);
+    text-decoration: underline;
+}
+
+.rating-number {
+    color: #666666;
+}
+
+.details {
+    font-weight: bold;
+    color: #ffffff;
+}
+
+
+
+
+
+
+
+
