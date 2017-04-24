@@ -5,6 +5,7 @@ body {
     font-weight: normal;
     font-family: "PT Sans", sans-serif;
     text-transform: uppercase;
+    width: 100%;
 }
 
 h2 {
@@ -14,7 +15,12 @@ h2 {
     font-weight: bold;
 }
 
-.feature {
+.feature-item h2,
+.feature-item-2 h2 {
+    color: #ffffff;
+}
+
+.feature-item {
     color: #ffffff;
 }
 
@@ -68,6 +74,7 @@ input[type=range] + label {
 .filter-title {
     font-size: 16px;
     font-weight: bold;
+    color: #ffffff;
 }
 
 .copyright {
@@ -110,3 +117,148 @@ input[type=range] + label {
 
 
 
+
+
+.container {
+    width: 1200px;
+    margin: 0 auto;
+    padding: 0 6%;
+    background-color: #ffffff;
+}
+
+.logo {
+    position: absolute;
+    left: 50%;
+}
+
+.main-menu a {
+    text-decoration: none;
+}
+
+.main-menu li {
+    display: inline-block;
+    list-style: none;
+    width: 20%;
+}
+
+.main-menu-left {
+    text-align: left;
+}
+
+.main-menu-right {
+    text-align: right;
+}
+
+.banner {
+    width: 100%;
+    margin: 0 auto;
+    margin-bottom: 65px;
+}
+
+.promo {
+    text-align: center;
+    margin-bottom: 57px;
+}
+
+.promo-title {
+    margin-bottom: 30px;
+}
+
+.feature-item {
+    display: block;
+    width: 33%;
+    text-align: center;
+    background-color: #81b3d2;
+    float: left;
+    padding: 45px;
+    box-sizing: border-box;
+    height: 256px;
+}
+
+.feature-img {
+    display: block;
+    width: 67%;
+    float: right;
+}
+
+.clearfix::after {
+    content: "";
+    display: table;
+    clear: both;
+}
+
+.advice-item {
+    display: inline-block;
+    text-align: center;
+    width: 33%;
+}
+
+.feature-item-2 {
+    display: block;
+    width: 33%;
+    text-align: center;
+    background-color: #81b3d2;
+    float: right;
+    padding: 45px;
+    box-sizing: border-box;
+    height: 256px;
+    color: #ffffff;
+}
+
+.feature-img-2 {
+    display: block;
+    width: 67%;
+    float: left;
+}
+
+.fact {
+    list-style: none;
+    background-color: #eeeeee;
+    margin-bottom: 58px;
+
+}
+
+.fact-item {
+    text-align: center;
+    vertical-align: top;
+    display: inline-block;
+    height: 256px;
+}
+
+.search-promo {
+    text-align: center;
+}
+
+.search-promo-btn {
+    width: 568px;
+    height: 86px;
+    background-color: #766357;
+    text-decoration: none;
+    margin-top: 50px;
+}
+
+.footer {
+    background-color: #ffffff;
+    height: 120px;
+}
+
+.footer-hashtag {
+    display: block;
+    width: 33%;
+    float: left;
+    text-align: center;
+}
+
+.footer-social {
+    width: 33%;
+    display: block;
+    float: left;
+    text-align: center;
+}
+
+.footer-copyright {
+    width: 33%;
+    display: block;
+    float: right;
+    text-align: center;
+}
