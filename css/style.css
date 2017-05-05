@@ -141,6 +141,12 @@ html {
 
 }
 
+.main-menu {
+  min-height: 40px;
+  margin: 0;
+  padding: 0;
+}
+
 .main-menu a {
     text-decoration: none;
     color: #000000;
@@ -158,7 +164,7 @@ html {
 .main-menu li {
     list-style: none;
     width: 22%;
-    padding-top: 20px;
+    padding-top: 15px;
     font-size: 14px;
 }
 
@@ -210,12 +216,11 @@ html {
     margin: 0;
 }
 
-.feature-img img {
-    width: 66.67%;
+.feature-img {
+    width: 800px;
     height: 256px;
     float: right;
     overflow: hidden;
-
 }
 
 .clearfix::after {
@@ -225,9 +230,9 @@ html {
     clear: both;
 }
 
-
 .advice {
     margin: 0;
+    padding: 0;
 }
 
 
@@ -251,12 +256,11 @@ html {
     margin: 0;
 }
 
-.feature-img-2 img {
-    width: 66.67%;
-    float: left;
+.feature-img-2 {
+    width: 800px;
     height: 256px;
+    float: left;
     overflow: hidden;
-    margin: 0;
 }
 
 .fact {
