@@ -32,13 +32,14 @@ h2 {
     font-size: 30px;
 }
 
-.search-form,
 .hashtag {
     font-size: 21px;
     font-weight: bold;
     color: #000000;
 }
 
+
+/*
 input[type=submit] {
     font-size: 21px;
     color: #ffffff;
@@ -56,10 +57,19 @@ input[type=range] + label {
     font-weight: bold;
 }
 
+*/
+
 .filter {
     font-size: 14px;
     color: #ffffff;
     font-weight: normal;
+    position: relative;
+    top: -27px;
+}
+
+.filter-options {
+    margin-top: 25px;
+    padding: 0;
 }
 
 .filter-title {
@@ -326,9 +336,9 @@ html {
 
 .footer {
     background-color: rgba(254, 254, 254, 0.5);
-    padding-top: 50px;
+    padding-top: 20px;
     width: 1200px;
-    min-height: 120px;
+    min-height: 100px;
     display: flex;
     justify-content: space-between;
     flex-direction: row;
@@ -340,7 +350,7 @@ html {
     text-align: center;
     vertical-align: top;
     padding-top: 30px;
-    padding-bottom: 20px;
+    padding-bottom: 30px;
 
 }
 
@@ -352,26 +362,39 @@ html {
     width: 33.3%;
     text-align: center;
     vertical-align: top;
-    padding-top: 30px;
+    padding-top: 20px;
     padding-bottom: 20px;
+    font-size: 0;
 }
 
 .footer-copyright {
     width: 33.3%;
     text-align: center;
     vertical-align: center;
-    padding-top: 30px;
+    padding-top: 20px;
     padding-bottom: 20px;
 }
 
 .copyright {
   display: inline-block;
-  vertical-align: top;
+  vertical-align: bottom;
   margin-right: 8px;
 }
 .footer-copyright-btn {
   display: inline-block;
-  vertical-align: top;
+  vertical-align: center;
+}
+
+.social-btn {
+    display: inline-block;
+    width: 46px;
+    height: 48px;
+    background-color: #81b3d2;
+    margin-right: 6px;
+}
+
+.social-btn:last-child {
+    margin-right: 0px;
 }
 
 
@@ -381,23 +404,21 @@ html {
 
 
 
-
-
-form {
+.filter {
     width: 1200px;
     height: 220px;
-    margin-bottom: 65px;
+    margin-bottom: 10px;
     background-image: url("../img/img-blur.jpg");
     background-repeat: no-repeat;
     background-position: center;
     background-size: cover;
-    overflow: hidden;
 }
 
 .filter-options {
     float: left;
     width: 20%;
 }
+
 
 .filter-options:first-child {
   margin-left: 6%;
@@ -407,19 +428,214 @@ form {
     float: right;
     width: 26%;
     margin-right: 6%;
+    margin-top: 30px;
 }
-
-
-
-
-
-
 
 .search-results {
-    margin-left: 6%;
-    margin-right: 6%;
     width: 1200px;
+    margin: 0 auto;
+    border-bottom: 1px solid #f2f2f2;
+    padding-bottom: 25px;
 }
+
+.search-result-number {
+    float: left;
+    margin-left: 6%;
+}
+
+.sort-results-by {
+    float: left;
+    margin-left: 55px;
+}
+
+.sort-order {
+    float: right;
+    margin-right: 6%;
+}
+
+.sort-by {
+  padding: 0;
+  margin: 0;
+   float: right;
+}
+
+.sort-by li {
+   display: inline-block;
+   margin-left: 30px;
+}
+
+
+
+
+.card {
+    margin-top: 30px;
+    padding-bottom: 25px;
+    border-bottom: 1px solid #f2f2f2;
+}
+
+
+.card-img {
+    margin-left: 6%;
+    float: left;
+    margin-right: 30px;
+}
+
+.card-item {
+    float: left;
+    margin-right: 30px;
+    margin-top: -22px;
+}
+
+.card-item-title {
+    margin-bottom: 10px;
+}
+
+.type {
+    margin-right: 40px;
+}
+
+
+.rating {
+    float: right;
+    margin-right: 6%;
+    text-align: right;
+}
+
+.stars {
+    margin-bottom: 47px;
+}
+
+.rating-number {
+    color: #666666;
+    background-color: #f2f2f2;
+    padding: 5px 15px;
+}
+
+.details {
+    position: absolute;
+    left: 30%;
+    margin-left: 22px;
+    margin-top: 66px;
+}
+
+.more-details {
+  text-decoration: none;
+  background-color: #81b3d2;
+  color: #ffffff;
+  padding: 5px 15px;
+  margin-right: 6px;
+}
+
+.book-it {
+  text-decoration: none;
+  background-color: #766357;
+  color: #ffffff;
+  padding: 5px 15px;
+}
+
+
+
+.search-form {
+    position: absolute;
+    width: 458px;
+    left: 50%;
+    margin-left: -284px;
+    background-color: #ffffff;
+    padding: 55px;
+    box-shadow: 0px 7px 15px 0 rgba(0, 1, 1, 0.15);
+    font-weight: bold;
+    color: #000000;
+}
+
+.search-form fieldset {
+    margin-bottom: 30px;
+}
+
+.date-out input[type="text"],
+.date-in input[type="text"] {
+    width: 336px;
+    float: right;
+
+}
+
+input[type="text"] {
+    font-size: 14px;
+    color: #000000;
+    font-weight: bold;
+    text-transform: uppercase;
+    padding: 10px 0 10px 10px;
+}
+
+
+
+#date-in,
+#date-out,
+.min,
+#children,
+.max,
+#adults  {
+    background-color: #f2f2f2;
+    border: none;
+}
+
+.adults {
+    float: left;
+    width: 230px;
+}
+
+.children {
+    float: right;
+    width: 230px;
+}
+
+.children label {
+    margin-left: 50px;
+    float: left;
+}
+
+.search-form fieldset {
+    border: none;
+    padding: 0;
+}
+
+.search-form input[type="submit"] {
+    display: block;
+    color: #ffffff;
+    background-color: #81b3d2;
+    border: none;
+    margin: 0 auto;
+    width: 458px;
+    padding: 20px 0;
+    text-transform: uppercase;
+    font-size: 21px;
+    font-weight: bold;
+    margin-top: 40px;
+
+}
+
+.counter {
+    font-size: 0;
+    float: right;
+}
+
+.counter a {
+    color: #a9a9a9;
+    display: inline-block;
+    width: 38px;
+    text-align: center;
+    text-decoration: none;
+    font-size: 18px;
+    padding-top: 6px;
+    padding-bottom: 9px;
+}
+
+.number-of-people input[type="text"] {
+    width: 38px;
+}
+
+
+
+
 
 
 
