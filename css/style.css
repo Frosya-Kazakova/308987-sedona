@@ -4,7 +4,7 @@ body {
     color: #333333;
     background-color: #f2f2f2;
     font-weight: normal;
-    font-family: "PT Sans", "Arial", sans-serif;
+    font-family: "PT Sans", "Tahoma", sans-serif;
     text-transform: uppercase;
     min-width: 1200px;
     margin: 0;
@@ -130,6 +130,16 @@ html {
     margin: 0 auto;
     background-color: #ffffff;
     box-shadow: 0px 5px 15px 0 rgba(0, 1, 1, 0.2);
+
+    position: relative;
+}
+
+.container-main {
+    width: 1200px;
+    margin: 0 auto;
+    background-color: #ffffff;
+    box-shadow: 0px 5px 15px 0 rgba(0, 1, 1, 0.2);
+    position: relative;
 }
 
 .logo {
@@ -142,9 +152,8 @@ html {
 .main-header {
     margin-left: 6%;
     margin-right: 6%;
-    margin-bottom: 20px;
     background-color: #ffffff;
-
+    min-height: 56px;
 }
 
 .main-menu {
@@ -171,9 +180,7 @@ html {
     list-style: none;
     width: 22%;
     padding-top: 15px;
-    padding-bottom: 20px;
     font-size: 14px;
-    overflow: hidden;
 }
 
 .main-menu-right {
@@ -191,16 +198,10 @@ html {
 }
 
 .banner {
-    position: relative;
-    top: -27px;
-    width: 100%;
-    height: 591px;
+    width: 1200px;
+    height: 535px;
     margin: 0 auto;
-    margin-bottom: 45px;
-    background-image: url("../img/main-img.jpg");
-    background-repeat: no-repeat;
-    background-position: center;
-    background-size: cover;
+    margin-bottom: 33px;
 }
 
 .promo {
@@ -210,17 +211,21 @@ html {
 }
 
 .promo-title {
-    margin-bottom: 30px;
+    margin: 0;
+    padding-bottom: 30px;
+}
+
+.promo-text {
+    margin: 0;
 }
 
 .feature,
 .feature-2 {
     background-color: #81b3d2;
-    overflow: hidden;
 }
 
 .feature {
-    margin-top: 57px;
+    margin-top: 54px;
 }
 
 .feature-item {
@@ -228,27 +233,40 @@ html {
     text-align: center;
     float: left;
     box-sizing: border-box;
-    margin: 55px;
-    overflow: hidden;
-    width: 290px;
+    margin: 44px 38px 50px 57px;
+    width: 285px;
 }
 
+.feature-description {
+    margin-top: 21px;
+    margin-bottom: 0;
+    width: 285px;
+}
+
+.feature-title {
+    margin-top: 0;
+    line-height: 23px;
+}
 
 .feature-item-2 {
-    width: 33.33%;
-    width: 290px;
+    width: 320px;
     text-align: center;
     float: right;
     box-sizing: border-box;
     color: #ffffff;
-    margin: 55px;
-    overflow: hidden;
+    margin: 43px 40px 50px 40px;
 }
 
 .feature-img {
     width: 800px;
     height: 256px;
     float: right;
+    overflow: hidden;
+
+}
+
+.feature-img img {
+    margin: -78px 0 -78px 0;
 }
 
 .clearfix::after {
@@ -263,6 +281,10 @@ html {
     padding: 0;
 }
 
+.advice-title {
+    margin-top: 27px;
+}
+
 
 
 .advice-item {
@@ -271,13 +293,18 @@ html {
     text-align: center;
     width: 33.33%;
     background-color: ;
-    padding: 165px 0 50px 0;
+    padding: 60px 0 68px 0;
 }
 
 .feature-img-2 {
     width: 800px;
     height: 256px;
     float: left;
+    overflow: hidden;
+}
+
+.feature-img-2 img {
+    margin: -78px 0 -78px 0;
 }
 
 .fact {
@@ -296,6 +323,19 @@ html {
     margin: 0;
 }
 
+.fact-title {
+    margin-top: 0;
+    line-height: 23px;
+    width: 145px;
+    margin-left: 127px;
+}
+
+.fact-description {
+    margin-top: 25px;
+    width: 275px;
+    margin-left: 64px;
+}
+
 .fact-item:first-child {
   margin-left: 0;
 }
@@ -303,11 +343,11 @@ html {
 
 .search-promo {
     text-align: center;
-    margin-top: 65px;
+    margin-top: 55px;
 }
 
 .search-promo-description  {
-    margin-top: 34px;
+    margin-top: 30px;
     line-height: 24px;
 
 }
@@ -325,20 +365,36 @@ html {
     margin-top: 50px;
 }
 
-.map {
+.footer {
+    background-color: #ffffff;
+    padding-top: 50px;
     width: 100%;
-    height: 593px;
-    background-image: url("../img/map-full.jpg");
-    background-repeat: no-repeat;
-    background-position: center;
-    background-size: cover;
+    display: flex;
+    justify-content: space-between;
+    flex-direction: row;
+    align-content: center;
 }
 
-.footer {
-    background-color: rgba(254, 254, 254, 0.5);
-    padding-top: 20px;
+.twitter {
+    background: url(../img/twitter-icon.png) no-repeat 15px 17px;
+}
+
+.facebook {
+    background: url(../img/icon-facebook.png) no-repeat 16px 14px;
+}
+
+.youtube {
+    background: url(../img/icon-youtube.png) no-repeat 13px 16px;
+}
+
+
+.footer-main {
+    background-color: rgba(254, 254, 254, 0.9);
+    position: absolute;
+    bottom: 0;
+    padding-top: 15px;
+    padding-bottom: 30px;
     width: 1200px;
-    min-height: 100px;
     display: flex;
     justify-content: space-between;
     flex-direction: row;
@@ -387,6 +443,7 @@ html {
 
 .social-btn {
     display: inline-block;
+    vertical-align: center;
     width: 46px;
     height: 48px;
     background-color: #81b3d2;
@@ -408,7 +465,7 @@ html {
     width: 1200px;
     height: 220px;
     margin-bottom: 10px;
-    background-image: url("../img/img-blur.jpg");
+    background-image: url(../img/img-blur.jpg);
     background-repeat: no-repeat;
     background-position: center;
     background-size: cover;
@@ -461,6 +518,7 @@ html {
 
 .sort-by li {
    display: inline-block;
+   vertical-align: center;
    margin-left: 30px;
 }
 
@@ -537,7 +595,7 @@ html {
 
 .search-form {
     position: absolute;
-    width: 458px;
+    width: 460px;
     left: 50%;
     margin-left: -284px;
     background-color: #ffffff;
@@ -547,15 +605,32 @@ html {
     color: #000000;
 }
 
+.search-form {
+    border: none;
+}
+
+.search-form label {
+    margin: 0;
+    padding: 0;
+}
+
 .search-form fieldset {
     margin-bottom: 30px;
 }
 
-.date-out input[type="text"],
 .date-in input[type="text"] {
     width: 336px;
-    float: right;
+    margin-left: 17px;
+}
 
+.adults input[type="text"] {
+    padding: 10px 0 10px 10px;
+}
+
+
+.date-out input[type="text"] {
+    width: 336px;
+    margin-left: 14px;
 }
 
 input[type="text"] {
@@ -564,33 +639,35 @@ input[type="text"] {
     font-weight: bold;
     text-transform: uppercase;
     padding: 10px 0 10px 10px;
-}
-
-
-
-#date-in,
-#date-out,
-.min,
-#children,
-.max,
-#adults  {
+    outline: none;
     background-color: #f2f2f2;
     border: none;
 }
 
+
 .adults {
-    float: left;
-    width: 230px;
+  float: left;
+
+}
+
+.adults label {
+  margin-right: 35px;
+
 }
 
 .children {
-    float: right;
-    width: 230px;
+  float: right;
 }
 
 .children label {
-    margin-left: 50px;
-    float: left;
+  display: inline-block;
+  vertical-align: center;
+
+}
+
+.children .counter {
+    margin-left: 26px;
+
 }
 
 .search-form fieldset {
@@ -609,13 +686,17 @@ input[type="text"] {
     text-transform: uppercase;
     font-size: 21px;
     font-weight: bold;
-    margin-top: 40px;
+    margin-top: 50px;
+    outline: none;
 
 }
 
 .counter {
     font-size: 0;
-    float: right;
+    display: inline-block;
+    vertical-align: center;
+    background-color: #f2f2f2;
+    border: none;
 }
 
 .counter a {
@@ -630,7 +711,7 @@ input[type="text"] {
 }
 
 .number-of-people input[type="text"] {
-    width: 38px;
+    width: 28px;
 }
 
 
@@ -639,3 +720,29 @@ input[type="text"] {
 
 
 
+
+.sprite {
+    background-image: url(../img/spritesheet.png);
+    background-repeat: no-repeat;
+    display: block;
+    margin-left: 162px;
+}
+
+.sprite-icon-burger {
+    width: 74px;
+    height: 70px;
+    background-position: -10px -10px;
+}
+
+.sprite-icon-gift {
+    width: 64px;
+    height: 76px;
+    background-position: -104px -10px;
+    margin-left: 169px;
+}
+
+.sprite-icon-house {
+    width: 75px;
+    height: 72px;
+    background-position: -188px -10px;
+}

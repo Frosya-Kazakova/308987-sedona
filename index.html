@@ -3,16 +3,16 @@
     <head>
         <meta charset="utf-8">
         <title>Отдых в Седоне</title>
-        <link href="https://fonts.googleapis.com/css?family=PT+Sans:400,700&amp;subset=cyrillic" rel="stylesheet">
-        <link href="css/style.css" rel="stylesheet">
         <link href="css/normalize.css" rel="stylesheet">
+        <link href="css/style.css" rel="stylesheet">
+        <link href="https://fonts.googleapis.com/css?family=PT+Sans:400,700&amp;subset=cyrillic" rel="stylesheet">
     </head>
 
     <body>
 
 
-        <div class="container">
-            <header class="main-header clearfix">
+        <div class="container-main">
+            <header class="main-header">
                 <a class="logo">
                     <img src="img/index-logo.png" width="138" height="70" alt="City of Sedona">
                 </a>
@@ -25,10 +25,10 @@
                             <a href="#">Фото и видео</a>
                         </li><!--
                       --><li class="main-menu-right">
-                            <a href="#">Карта штата</a>
+                            <a href="#">Гостиницы</a>
                         </li><!--
                       --><li class="main-menu-right">
-                            <a href="#">Гостиницы</a>
+                            <a href="#">Карта штата</a>
                         </li>
                     </ul>
                 </nav>
@@ -37,6 +37,7 @@
 
                 <main>
                     <div class="banner">
+                        <img src="img/main-img.jpg" class="banner-img" width="1200" height="535" alt="Добро пожаловать в Седону!">
                     </div>
                     <div class="promo">
                         <h2 class="promo-title">Седона — небольшой городок в Аризоне, заслуживающий большего!</h2>
@@ -56,14 +57,17 @@
 
                     <ul class="advice">
                         <li class="advice-item">
+                            <span class="sprite sprite-icon-house"></span>
                             <h2 class="advice-title">Жилье</h2>
-                            <p class="advice-description">Рекомендуем пожить в настоящем<br>мотеле — все, как в кино!</p>
+                            <p class="advice-description">Рекомендуем пожить в настоящем<br>мотеле, все, как в кино!</p>
                         </li><!--
                       --><li class="advice-item">
+                            <span class="sprite sprite-icon-burger"></span>
                             <h2 class="advice-title">Еда</h2>
                             <p class="advice-description">Всегда заказывайте фирменный бургер,<br>вы не разочаруетесь!</p>
                         </li><!--
                       --><li class="advice-item">
+                            <span class="sprite sprite-icon-gift"></span>
                             <h2 class="advice-title">Сувениры</h2>
                             <p class="advice-description">Не только китайского, но и местного<br>производства!</p>
                         </li>
@@ -74,7 +78,7 @@
                             <img src="img/img-2.jpg" width="800" height="400" alt="мост дьявола">
                         </div>
                         <div class="feature-item-2">
-                            <h2 class="feature-title">Там есть мост дьявола!</h2>
+                            <h2 class="feature-title">Там есть<br>мост дьявола!</h2>
                             <span class="feature-number">— №2 —</span>
                             <p class="feature-description">Да, по нему можно пройти! Если, конечно, вы осмелитесь</p>
                         </div>
@@ -82,19 +86,19 @@
 
                     <ul class="fact">
                         <li class="fact-item">
-                            <h2 class="fact-title">Небольшая площадь</h2>
+                            <h2 class="fact-title">Небольшая<br>площадь</h2>
                             <span class="fact-number">— №3 —</span>
-                            <p class="fact-description">Все достопримечательности<br>находятся очень близко</p>
+                            <p class="fact-description">Все достопримечательности находятся очень близко</p>
                         </li><!--
                       --><li class="fact-item">
-                            <h2 class="fact-title">Красивая дорога</h2>
+                            <h2 class="fact-title">Красивая<br>дорога</h2>
                             <span class="fact-number">— №4 —</span>
-                            <p class="fact-description">Ехать в Седону из Лас-Вегаса совсем<br>не скучно!</p>
+                            <p class="fact-description">Ехать в Седону из Лас-Вегаса совсем не скучно!</p>
                         </li><!--
                       --><li class="fact-item">
-                            <h2 class="fact-title">Мало туристов</h2>
+                            <h2 class="fact-title">Мало<br>туристов</h2>
                             <span class="fact-number">— №5 —</span>
-                            <p class="fact-description">Большинство едет в Гранд-Каньон и<br>толпится там</p>
+                            <p class="fact-description">Большинство едет в Гранд-Каньон и толпится там</p>
                         </li>
                     </ul>
 
@@ -114,7 +118,7 @@
                             <label for="date-out">Дата выезда:</label>
                             <input type="text" name="date" id="date-out" placeholder="4 июля 2017">
                         </fieldset>
-                        <fieldset class="number-of-people">
+                        <fieldset class="number-of-people clearfix">
                             <div class="adults">
                                 <label for="adults">Взрослые:</label>
                                 <div class="counter">
@@ -137,6 +141,9 @@
 
 
                      <div class="map">
+                        <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d591769.6423268546!2d-111.79897700434209!3d34.97925239717101!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x872da132f942b00d%3A0x5548c523fa6c8efd!2z0KHQtdC00L7QvdCwLCDQkNGA0LjQt9C-0L3QsCA4NjMzNiwg0KHQqNCQ!5e0!3m2!1sru!2sru!4v1494269872861" width="1200" height="595" frameborder="0" style="border:0" allowfullscreen>
+                        </iframe>
+                        <!--  <img src="img/map-full.jpg" class="map-img" width="1200" height="595" alt="карта Седоны"> -->
                      </div>
 
 
@@ -145,15 +152,14 @@
                 </main>
 
 
-                <footer class="footer">
+                <footer class="footer-main">
                     <div class="footer-hashtag">
                         <a class="hashtag" href="#">#visitsedona</a>
                     </div>
                     <div class="footer-social">
-                        <a class="social-btn" href="#">Твиттер
-                        </a>
-                        <a class="social-btn" href="#">Фейсбук</a>
-                        <a class="social-btn" href="#">Ютуб</a>
+                        <a class="social-btn twitter" href="#">Твиттер</a>
+                        <a class="social-btn facebook" href="#">Фейсбук</a>
+                        <a class="social-btn youtube" href="#">Ютуб</a>
                     </div>
                     <div class="footer-copyright">
                         <p class="copyright">Website by</p>
