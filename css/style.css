@@ -243,6 +243,12 @@ html {
     width: 285px;
 }
 
+.feature-2 .feature-description {
+    margin-top: 21px;
+    margin-bottom: 0;
+    width: 320px;
+}
+
 .feature-title {
     margin-top: 0;
     line-height: 23px;
@@ -675,7 +681,7 @@ input[type="text"] {
     padding: 0;
 }
 
-.search-form input[type="submit"] {
+.search-form button[type="submit"] {
     display: block;
     color: #ffffff;
     background-color: #81b3d2;
@@ -699,19 +705,23 @@ input[type="text"] {
     border: none;
 }
 
-.counter a {
+.counter button {
     color: #a9a9a9;
     display: inline-block;
     width: 38px;
+    height: 36px;
     text-align: center;
     text-decoration: none;
-    font-size: 18px;
+    font-size: 12px;
     padding-top: 6px;
-    padding-bottom: 9px;
+    padding-bottom: 13px;
+    border: none;
+    background-color: #f2f2f2;
 }
 
 .number-of-people input[type="text"] {
     width: 28px;
+    background-color: #f2f2f2;
 }
 
 
@@ -721,7 +731,7 @@ input[type="text"] {
 
 
 
-.sprite {
+.advice-sprite {
     background-image: url(../img/spritesheet.png);
     background-repeat: no-repeat;
     display: block;
@@ -745,4 +755,33 @@ input[type="text"] {
     width: 75px;
     height: 72px;
     background-position: -188px -10px;
+}
+
+.search-form-sprite {
+    background-image: url(../img/search-form-spritesheet.png);
+    background-repeat: no-repeat;
+    display: block;
+}
+
+.sprite-calendar {
+    position: absolute;
+    left: 85%;
+    margin-top: -28px;
+    width: 21px;
+    height: 22px;
+    background-position: -10px -10px;
+    border: none;
+    background-color: transparent;
+}
+
+.sprite-minus {
+    width: 12px;
+    height: 3px;
+    background-position: -38px 5px;
+}
+
+.sprite-plus {
+    width: 11px;
+    height: 11px;
+    background-position: -71px 1px;
 }

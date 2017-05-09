@@ -25,7 +25,7 @@
                             <a href="#">Фото и видео</a>
                         </li><!--
                       --><li class="main-menu-right">
-                            <a href="#">Гостиницы</a>
+                            <a href="catalog.html">Гостиницы</a>
                         </li><!--
                       --><li class="main-menu-right">
                             <a href="#">Карта штата</a>
@@ -57,17 +57,17 @@
 
                     <ul class="advice">
                         <li class="advice-item">
-                            <span class="sprite sprite-icon-house"></span>
+                            <span class="advice-sprite sprite-icon-house"></span>
                             <h2 class="advice-title">Жилье</h2>
                             <p class="advice-description">Рекомендуем пожить в настоящем<br>мотеле, все, как в кино!</p>
                         </li><!--
                       --><li class="advice-item">
-                            <span class="sprite sprite-icon-burger"></span>
+                            <span class="advice-sprite sprite-icon-burger"></span>
                             <h2 class="advice-title">Еда</h2>
                             <p class="advice-description">Всегда заказывайте фирменный бургер,<br>вы не разочаруетесь!</p>
                         </li><!--
                       --><li class="advice-item">
-                            <span class="sprite sprite-icon-gift"></span>
+                            <span class="advice-sprite sprite-icon-gift"></span>
                             <h2 class="advice-title">Сувениры</h2>
                             <p class="advice-description">Не только китайского, но и местного<br>производства!</p>
                         </li>
@@ -113,30 +113,32 @@
                         <fieldset class="date-in">
                             <label for="date-in">Дата заезда:</label>
                             <input type="text" name="date" id="date-in" placeholder="24 апреля 2017">
+                            <button class="search-form-sprite sprite-calendar" alt="Календарь"></button>
                         </fieldset>
                         <fieldset class="date-out">
                             <label for="date-out">Дата выезда:</label>
                             <input type="text" name="date" id="date-out" placeholder="4 июля 2017">
+                            <button class="search-form-sprite sprite-calendar" alt="Календарь"></button>
                         </fieldset>
                         <fieldset class="number-of-people clearfix">
                             <div class="adults">
                                 <label for="adults">Взрослые:</label>
                                 <div class="counter">
-                                    <a class="min" href="#">-</a>
+                                    <button class="min search-form-sprite sprite-minus" alt="Уменьшить количество"></button>
                                     <input type="text" name="adults" id="adults" placeholder="2">
-                                    <a class="max" href="#">+</a>
+                                    <button class="max search-form-sprite sprite-plus" alt="Увеличить количество"></button>
                                 </div>
                             </div>
                             <div class="children">
                                 <label for="children">Дети:</label>
                                 <div class="counter">
-                                    <a class="min" href="#">-</a>
+                                    <button class="min search-form-sprite sprite-minus" alt="Уменьшить количество"></button>
                                     <input type="text" name="children" id="children" placeholder="0">
-                                    <a class="max" href="#">+</a>
+                                    <button class="max search-form-sprite sprite-plus" alt="Увеличить количество"></button>
                                 </div>
                             </div>
                         </fieldset>
-                        <input type="submit" value="Найти">
+                        <button class="search-btn" type="submit">Найти</button>
                     </form>
 
 
