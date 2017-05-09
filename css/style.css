@@ -89,8 +89,8 @@ h2 {
 }
 
 .filter-left {
-  margin: 0;
-  padding: 0;
+    margin: 0;
+    padding: 0;
 }
 
 .filter-left-item {
@@ -150,6 +150,7 @@ h2 {
     text-decoration: none;
     color: rgba(0, 0, 0, 0.3);
 }
+
 .sort-by a {
     color: #81b3d2;
 }
@@ -217,9 +218,9 @@ html {
 }
 
 .main-menu {
-  min-height: 40px;
-  margin: 0;
-  padding: 0;
+    min-height: 40px;
+    margin: 0;
+    padding: 0;
 }
 
 .main-menu a {
@@ -228,12 +229,12 @@ html {
 }
 
 .main-menu a:hover {
-  color: #81b3d2;
+    color: #81b3d2;
 }
 
 .main-menu a:active {
-  color: #000000;
-  opacity: 0.3;
+    color: #000000;
+    opacity: 0.3;
 }
 
 .main-menu li {
@@ -351,8 +352,6 @@ html {
     margin-top: 27px;
 }
 
-
-
 .advice-item {
     display: inline-block;
     vertical-align: top;
@@ -455,7 +454,6 @@ html {
     background: url(../img/icon-youtube.png) no-repeat 13px 16px;
 }
 
-
 .footer-main {
     background-color: rgba(254, 254, 254, 0.9);
     position: absolute;
@@ -479,7 +477,7 @@ html {
 }
 
 .footer-hashtag a {
-  text-decoration: none;
+    text-decoration: none;
 }
 
 .footer-social {
@@ -500,13 +498,14 @@ html {
 }
 
 .copyright {
-  display: inline-block;
-  vertical-align: bottom;
-  margin-right: 8px;
+   display: inline-block;
+   vertical-align: bottom;
+   margin-right: 8px;
 }
+
 .footer-copyright-btn {
-  display: inline-block;
-  vertical-align: center;
+   display: inline-block;
+   vertical-align: center;
 }
 
 .social-btn {
@@ -521,13 +520,6 @@ html {
 .social-btn:last-child {
     margin-right: 0px;
 }
-
-
-
-
-
-
-
 
 .filter {
     width: 1200px;
@@ -546,7 +538,8 @@ html {
 .price-per-day {
     float: right;
     width: 26%;
-    margin-top: 40px;
+    margin-top: 20px;
+    border: none;
 }
 
 .search-results {
@@ -571,19 +564,16 @@ html {
 }
 
 .sort-by {
-  padding: 0;
-  margin: 0;
-   float: right;
+    padding: 0;
+    margin: 0;
+    float: right;
 }
 
 .sort-by li {
-   display: inline-block;
-   vertical-align: center;
-   margin-left: 30px;
+    display: inline-block;
+    vertical-align: center;
+    margin-left: 30px;
 }
-
-
-
 
 .card {
     margin-top: 30px;
@@ -612,7 +602,6 @@ html {
     width: 110px;
 }
 
-
 .rating {
     float: right;
     text-align: right;
@@ -633,21 +622,19 @@ html {
 }
 
 .more-details {
-  text-decoration: none;
-  background-color: #81b3d2;
-  color: #ffffff;
-  padding: 5px 16px;
-  margin-right: 6px;
+    text-decoration: none;
+    background-color: #81b3d2;
+    color: #ffffff;
+    padding: 5px 16px;
+    margin-right: 6px;
 }
 
 .book-it {
-  text-decoration: none;
-  background-color: #766357;
-  color: #ffffff;
-  padding: 5px 16px;
+    text-decoration: none;
+    background-color: #766357;
+    color: #ffffff;
+    padding: 5px 16px;
 }
-
-
 
 .search-form {
     position: absolute;
@@ -689,7 +676,7 @@ html {
     margin-left: 14px;
 }
 
-input[type="text"] {
+.search-form input[type="text"] {
     font-size: 14px;
     color: #000000;
     font-weight: bold;
@@ -700,30 +687,26 @@ input[type="text"] {
     border: none;
 }
 
-
 .adults {
-  float: left;
+    float: left;
 
 }
 
 .adults label {
-  margin-right: 35px;
-
+    margin-right: 35px;
 }
 
 .children {
-  float: right;
+    float: right;
 }
 
 .children label {
-  display: inline-block;
-  vertical-align: center;
-
+    display: inline-block;
+    vertical-align: center;
 }
 
 .children .counter {
     margin-left: 26px;
-
 }
 
 .search-form fieldset {
@@ -744,7 +727,6 @@ input[type="text"] {
     font-weight: bold;
     margin-top: 50px;
     outline: none;
-
 }
 
 .counter {
@@ -773,13 +755,6 @@ input[type="text"] {
     width: 28px;
     background-color: #f2f2f2;
 }
-
-
-
-
-
-
-
 
 .advice-sprite {
     background-image: url(../img/spritesheet.png);
@@ -836,13 +811,16 @@ input[type="text"] {
     background-position: -71px 1px;
 }
 
-
-
-
 .sprite-sort-order {
     background-image: url(../img/filter-sprite.png);
     background-repeat: no-repeat;
     display: inline-block;
+}
+
+.sprite-bottom {
+    width: 11px;
+    height: 10px;
+    background-position: -10px -10px;
 }
 
 .sprite-bottom {
@@ -875,12 +853,130 @@ input[type="text"] {
 
 }
 
-.stars i {
-    background-image: url(../img/star-icon.png);
+.rating-star {
+    background-image: url(../img/star-icons.png);
     background-repeat: no-repeat;
     width: 18px;
     height: 17px;
-
+    display: inline-block;
 }
+
+.filter-range {
+    width: 330px;
+    color: #ffffff;
+    text-transform: uppercase;
+}
+
+.filter-range-title {
+    margin-bottom: 9px;
+
+    font-weight: bold;
+    font-size: 16px;
+    line-height: 21px;
+}
+
+.price-controls {
+    height: 36px;
+    margin-bottom: 20px;
+    border: 2px solid #ffffff;
+    border-radius: 2px;
+    font-size: 0;
+    position: relative;
+}
+
+.price-controls::after {
+    content: "";
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 2px;
+    height: 22px;
+    background: #ffffff;
+}
+
+.price-controls label {
+    display: inline-block;
+    font-size: 14px;
+    line-height: 38px;
+    vertical-align: top;
+    cursor: pointer;
+}
+
+.price-controls .min-price,
+.price-controls .max-price {
+    width: 90px;
+    padding-left: 65px;
+}
+
+.price-controls input {
+    width: 50px;
+    margin: 0;
+    color: inherit;
+    font: inherit;
+    background: none;
+    border: none;
+    outline: none;
+}
+
+.range-controls {
+    position: relative;
+    margin-bottom: 32px;
+}
+
+.range-controls .scale {
+    height: 2px;
+    background: rgba(255, 255, 255, 0.3);
+}
+
+.range-controls .bar {
+    width: 80%;
+    height: 2px;
+    background: #ffffff;
+}
+
+.range-toggle {
+    position: absolute;
+    top: -9px;
+    width: 4px;
+    height: 4px;
+    background: #ababab;
+    border: 8px solid #ffffff;
+    border-radius: 50%;
+    box-shadow: 0 2px 1px 0 rgba(0, 1, 1, 0.2);
+    cursor: pointer;
+}
+
+.range-toggle:hover {
+    background: #1c4f80;
+}
+
+.range-toggle-min {
+    left: 0;
+}
+
+.range-toggle-max {
+    left: 80%;
+}
+
+.btn-transparent {
+    display: block;
+    margin: 0 auto;
+    padding: 6px 35px;
+    font-size: 14px;
+    line-height: 20px;
+    color: #ffffff;
+    text-transform: uppercase;
+    background: transparent;
+    border: 2px solid #ffffff;
+    border-radius: 2px;
+    cursor: pointer;
+}
+
+.btn-transparent:hover {
+    color: #000000;
+    background: #ffffff;
+}
+
 
 

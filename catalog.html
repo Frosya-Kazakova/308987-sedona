@@ -73,10 +73,22 @@
                             </ul>
                         </fieldset>
                         <fieldset class="price-per-day">
-                            <label for="dayscount">Стоимость в сутки (Р):</label>
-                            от 0 <input type="range" id="dayscount" name="dayscount" min="0" max="3000"> до 3000
+                            <div class="filter-range">
+                                <div class="filter-range-title">Стоимость в сутки (р):</div>
+                                <div class="price-controls">
+                                    <label class="min-price">от <input type="text" name="min-price" value="0"></label>
+                                    <label class="max-price">до <input type="text" name="max-price" value="3000"></label>
+                                </div>
+                                <div class="range-controls">
+                                    <div class="scale">
+                                        <div class="bar"></div>
+                                    </div>
+                                    <div class="range-toggle range-toggle-min"></div>
+                                    <div class="range-toggle range-toggle-max"></div>
+                                </div>
+                                <button class="btn-transparent" type="submit">Показать</button>
+                            </div>
                         </fieldset>
-                        <input type="submit" value="Показать">
                     </div>
                 </form>
 
@@ -130,10 +142,10 @@
                         </div>
                         <div class="rating">
                             <div class="stars">
-                                <i class="rating-star">1</i>
-                                <i class="rating-star">1</i>
-                                <i class="rating-star">1</i>
-                                <i class="rating-star">1</i>
+                                <span class="rating-star"></span>
+                                <span class="rating-star"></span>
+                                <span class="rating-star"></span>
+                                <span class="rating-star"></span>
                             </div>
                             <span class="rating-number">Рейтинг: 8,5</span>
                         </div>
@@ -155,8 +167,8 @@
                         </div>
                         <div class="rating">
                             <div class="stars">
-                                <i class="rating-star">1</i>
-                                <i class="rating-star">1</i>
+                                <span class="rating-star"></span>
+                                <span class="rating-star"></span>
                             </div>
                             <span class="rating-number">Рейтинг: 8,9</span>
                         </div>
@@ -178,9 +190,9 @@
                         </div>
                         <div class="rating">
                             <div class="stars">
-                                <i class="rating-star">1</i>
-                                <i class="rating-star">1</i>
-                                <i class="rating-star">1</i>
+                                <span class="rating-star"></span>
+                                <span class="rating-star"></span>
+                                <span class="rating-star"></span>
                             </div>
                             <span class="rating-number">Рейтинг: 9,2</span>
                         </div>
