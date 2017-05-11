@@ -52,19 +52,19 @@ h2 {
     padding-left: 40px;
     position: relative;
     cursor: pointer;
+    border: none;
 }
 
  .filter input[type="checkbox"] + label::before {
     content: "";
-    background-image: url(../img/filter-sprite.png);
-    background-repeat: no-repeat;
     display: block;
-    width: 22px;
-    height: 22px;
-    background-position: -10px -40px;
+    width: 18px;
+    height: 18px;
     position: absolute;
     top: 0;
     left: 0;
+    border: 2px solid #ffffff;
+    border-radius: 5px;
 }
 
  .filter input[type="checkbox"]:checked + label::after {
@@ -79,6 +79,7 @@ h2 {
     width: 26px;
     height: 22px;
     background-position: -10px -82px;
+    border: none;
 }
 
 
@@ -239,14 +240,19 @@ html {
 
 .main-menu li {
     list-style: none;
-    width: 22%;
-    padding-top: 15px;
+    padding-top: 17px;
     font-size: 14px;
 }
 
 .main-menu-right {
     text-align: right;
     float: right;
+
+    width: 241px;
+}
+
+.main-menu-right:last-child {
+    letter-spacing: 0.4px;
 }
 
 .main-header {
@@ -256,6 +262,8 @@ html {
 .main-menu-left {
     text-align: left;
     float: left;
+
+    width: 241px;
 }
 
 .banner {
@@ -263,6 +271,10 @@ html {
     height: 535px;
     margin: 0 auto;
     margin-bottom: 33px;
+}
+
+.banner-img {
+    overflow: hidden;
 }
 
 .promo {
@@ -293,35 +305,33 @@ html {
     color: #ffffff;
     text-align: center;
     float: left;
+    width: 400px;
+    padding: 46px 50px 50px 50px;
     box-sizing: border-box;
-    margin: 44px 38px 50px 57px;
-    width: 285px;
+    margin: 0 auto;
+}
+
+.feature-item-2 {
+    width: 400px;
+    text-align: center;
+    float: right;
+    color: #ffffff;
+    padding: 45px 35px 45px 35px;
+    box-sizing: border-box;
+    margin: 0 auto;
 }
 
 .feature-description {
     margin-top: 21px;
     margin-bottom: 0;
-    width: 285px;
-}
-
-.feature-2 .feature-description {
-    margin-top: 21px;
-    margin-bottom: 0;
-    width: 320px;
+    margin-right: 0;
+    text-align: center;
 }
 
 .feature-title {
     margin-top: 0;
-    line-height: 23px;
-}
-
-.feature-item-2 {
-    width: 320px;
-    text-align: center;
-    float: right;
-    box-sizing: border-box;
-    color: #ffffff;
-    margin: 43px 40px 50px 40px;
+    line-height: 21px;
+    margin-bottom: 24px;
 }
 
 .feature-img {
@@ -329,12 +339,15 @@ html {
     height: 256px;
     float: right;
     overflow: hidden;
-
 }
 
-.feature-img img {
-    margin: -78px 0 -78px 0;
+.feature-img-2 {
+    width: 800px;
+    height: 256px;
+    float: left;
+    overflow: hidden;
 }
+
 
 .clearfix::after {
     content: "";
@@ -346,30 +359,26 @@ html {
 .advice {
     margin: 0;
     padding: 0;
+    width: 1200px;
 }
 
 .advice-title {
-    margin-top: 27px;
+    margin-top: 0;
+    margin-bottom: 20px;
+}
+
+.advice-description {
+    margin: 0;
 }
 
 .advice-item {
     display: inline-block;
     vertical-align: top;
     text-align: center;
-    width: 33.33%;
-    background-color: ;
-    padding: 60px 0 68px 0;
-}
-
-.feature-img-2 {
-    width: 800px;
-    height: 256px;
-    float: left;
-    overflow: hidden;
-}
-
-.feature-img-2 img {
-    margin: -78px 0 -78px 0;
+    width: 400px;
+    padding: 158px 50px 83px 50px;
+    margin: 0 auto;
+    box-sizing: border-box;
 }
 
 .fact {
@@ -377,28 +386,29 @@ html {
     background-color: #eeeeee;
     margin: 0;
     padding: 0;
+    width: 1200px;
 }
 
 .fact-item {
     text-align: center;
     vertical-align: top;
     display: inline-block;
-    width: 33.33%;
-    padding: 45px 0 45px 0;
-    margin: 0;
+    width: 400px;
+    padding: 47px 60px 59px 60px;
+    margin: 0 auto;
+    box-sizing: border-box;
 }
 
 .fact-title {
     margin-top: 0;
-    line-height: 23px;
-    width: 145px;
-    margin-left: 127px;
+    line-height: 21px;
+    margin-bottom: 24px;
 }
 
 .fact-description {
-    margin-top: 25px;
-    width: 275px;
-    margin-left: 64px;
+     margin-top: 21px;
+     margin-bottom: 0;
+
 }
 
 .fact-item:first-child {
@@ -408,12 +418,16 @@ html {
 
 .search-promo {
     text-align: center;
-    margin-top: 55px;
+    margin: 0 auto;
+    padding-top: 56px;
+
 }
 
 .search-promo-description  {
-    margin-top: 30px;
+    padding: 25px 200px 48px 200px;
     line-height: 24px;
+    width: 470px;
+    margin: 0 auto;
 
 }
 
@@ -427,20 +441,23 @@ html {
     padding: 33px 0;
     background-color: #766357;
     text-decoration: none;
-    margin-top: 50px;
 }
 
 .footer {
     background-color: #ffffff;
 
-    padding-top: 15px;
-    padding-bottom: 30px;
+    padding-top: 35px;
+    padding-bottom: 35px;
     width: 100%;
+    height: 100px;
     display: flex;
     justify-content: space-between;
     flex-direction: row;
     align-content: center;
+
+
 }
+
 
 .twitter {
     background: url(../img/twitter-icon.png) no-repeat 15px 17px;
@@ -458,8 +475,8 @@ html {
     background-color: rgba(254, 254, 254, 0.9);
     position: absolute;
     bottom: 0;
-    padding-top: 15px;
-    padding-bottom: 30px;
+    padding-top: 35px;
+    padding-bottom: 45px;
     width: 1200px;
     display: flex;
     justify-content: space-between;
@@ -468,11 +485,12 @@ html {
 }
 
 .footer-hashtag {
-    width: 33.3%;
+    display: inline-block;
+    width: 400px;
     text-align: center;
-    vertical-align: top;
-    padding-top: 30px;
-    padding-bottom: 30px;
+    vertical-align: middle;
+
+    margin-top: 14px;
 
 }
 
@@ -481,36 +499,39 @@ html {
 }
 
 .footer-social {
-    width: 33.3%;
+    width: 400px;
     text-align: center;
-    vertical-align: top;
-    padding-top: 20px;
-    padding-bottom: 20px;
+    vertical-align: middle;
     font-size: 0;
 }
 
 .footer-copyright {
-    width: 33.3%;
+    width: 400px;
     text-align: center;
-    vertical-align: center;
-    padding-top: 20px;
-    padding-bottom: 20px;
+    vertical-align: middle;
+    font-size: 0;
 }
 
 .copyright {
    display: inline-block;
-   vertical-align: bottom;
-   margin-right: 8px;
+   vertical-align: middle;
+   margin-right: 6px;
+   font-size: 14px;
 }
 
 .footer-copyright-btn {
    display: inline-block;
-   vertical-align: center;
+   vertical-align: middle;
+}
+
+.footer-copyright-btn img {
+   display: inline-block;
+   vertical-align: middle;
 }
 
 .social-btn {
     display: inline-block;
-    vertical-align: center;
+    vertical-align: middle;
     width: 46px;
     height: 48px;
     background-color: #81b3d2;
@@ -523,7 +544,7 @@ html {
 
 .filter {
     width: 1200px;
-    height: 220px;
+    height: 217px;
     background-image: url(../img/img-blur.jpg);
     background-repeat: no-repeat;
     background-position: center;
@@ -537,15 +558,16 @@ html {
 
 .price-per-day {
     float: right;
-    width: 26%;
-    margin-top: 20px;
+    width: 318x;
+    margin-top: 27px;
     border: none;
+    padding: 0;
 }
 
 .search-results {
     width: 1200px;
     border-bottom: 1px solid #f2f2f2;
-    padding: 31px 0;
+    padding: 32px 0;
 
 }
 
@@ -576,7 +598,7 @@ html {
 }
 
 .card {
-    margin-top: 30px;
+    padding-top: 25px;
     padding-bottom: 25px;
     border-bottom: 1px solid #f2f2f2;
 }
@@ -585,14 +607,15 @@ html {
 .card-img {
     float: left;
     margin-right: 30px;
+    margin-top: 5px;
 }
 
 .card-item {
     float: left;
-    margin-top: -22px;
 }
 
 .card-item-title {
+    margin-top: 0;
     margin-bottom: 10px;
 }
 
@@ -638,7 +661,7 @@ html {
 
 .search-form {
     position: absolute;
-    width: 460px;
+    width: 458px;
     left: 50%;
     margin-left: -284px;
     background-color: #ffffff;
@@ -655,6 +678,7 @@ html {
 .search-form label {
     margin: 0;
     padding: 0;
+    font-weight: bold;
 }
 
 .search-form fieldset {
@@ -662,26 +686,65 @@ html {
 }
 
 .date-in input[type="text"] {
-    width: 336px;
+    width: 306px;
     margin-left: 17px;
-}
-
-.adults input[type="text"] {
-    padding: 10px 0 10px 10px;
-}
-
-
-.date-out input[type="text"] {
-    width: 336px;
-    margin-left: 14px;
-}
-
-.search-form input[type="text"] {
+    box-sizing: content-box;
+    font-weight: bold;
     font-size: 14px;
     color: #000000;
     font-weight: bold;
     text-transform: uppercase;
-    padding: 10px 0 10px 10px;
+    padding: 10px 30px 10px 10px;
+    outline: none;
+    background-color: #f2f2f2;
+    border: none;
+}
+
+.date-out input[type="text"] {
+    width: 306px;
+    margin-left: 14px;
+    box-sizing: content-box;
+    font-weight: bold;
+    font-size: 14px;
+    color: #000000;
+    font-weight: bold;
+    text-transform: uppercase;
+    padding: 10px 30px 10px 10px;
+    outline: none;
+    background-color: #f2f2f2;
+    border: none;
+}
+
+
+.counter .min {
+    padding: 10px 6px 10px 6px;
+     font-weight: bold;
+    color: #c2c2c2;
+    font-size: 18px;
+
+}
+
+.counter  .max {
+    padding: 10px 6px 10px 6px;
+     font-weight: bold;
+    color: #c2c2c2;
+    font-size: 18px;
+}
+
+.adults input[type="text"] {
+    padding: 6px 6px 14px 10px;
+}
+
+.children input[type="text"] {
+    padding: 6px 6px 14px 10px;
+}
+
+
+.number-of-people input[type="text"] {
+    font-size: 14px;
+    color: #000000;
+    font-weight: bold;
+    text-transform: uppercase;
     outline: none;
     background-color: #f2f2f2;
     border: none;
@@ -712,20 +775,23 @@ html {
 .search-form fieldset {
     border: none;
     padding: 0;
+    margin-left: 0;
+    margin-right: 0;
 }
 
-.search-form button[type="submit"] {
+.search-form [type="submit"] {
     display: block;
     color: #ffffff;
     background-color: #81b3d2;
     border: none;
-    margin: 0 auto;
+    margin-left: 0;
+    margin-right: 0;
     width: 458px;
-    padding: 20px 0;
+    padding: 19px 0;
     text-transform: uppercase;
     font-size: 21px;
     font-weight: bold;
-    margin-top: 50px;
+    margin-top: 46px;
     outline: none;
 }
 
@@ -738,10 +804,12 @@ html {
 }
 
 .counter button {
+    outline: none;
+    cursor: pointer;
     color: #a9a9a9;
     display: inline-block;
     width: 38px;
-    height: 36px;
+    box-sizing: border-box;
     text-align: center;
     text-decoration: none;
     font-size: 12px;
@@ -749,6 +817,9 @@ html {
     padding-bottom: 13px;
     border: none;
     background-color: #f2f2f2;
+    font-weight: bold;
+    color: #c2c2c2;
+    font-size: 18px;
 }
 
 .number-of-people input[type="text"] {
@@ -797,18 +868,6 @@ html {
     background-position: -10px -10px;
     border: none;
     background-color: transparent;
-}
-
-.sprite-minus {
-    width: 12px;
-    height: 3px;
-    background-position: -38px 5px;
-}
-
-.sprite-plus {
-    width: 11px;
-    height: 11px;
-    background-position: -71px 1px;
 }
 
 .sprite-sort-order {
@@ -862,7 +921,7 @@ html {
 }
 
 .filter-range {
-    width: 330px;
+    width: 318px;
     color: #ffffff;
     text-transform: uppercase;
 }
@@ -876,7 +935,7 @@ html {
 }
 
 .price-controls {
-    height: 36px;
+    height: 32px;
     margin-bottom: 20px;
     border: 2px solid #ffffff;
     border-radius: 2px;
@@ -898,7 +957,7 @@ html {
 .price-controls label {
     display: inline-block;
     font-size: 14px;
-    line-height: 38px;
+    line-height: 32px;
     vertical-align: top;
     cursor: pointer;
 }
@@ -906,7 +965,7 @@ html {
 .price-controls .min-price,
 .price-controls .max-price {
     width: 90px;
-    padding-left: 65px;
+    padding-left: 60px;
 }
 
 .price-controls input {
@@ -921,7 +980,7 @@ html {
 
 .range-controls {
     position: relative;
-    margin-bottom: 32px;
+    margin-bottom: 35px;
 }
 
 .range-controls .scale {
@@ -962,7 +1021,7 @@ html {
 .btn-transparent {
     display: block;
     margin: 0 auto;
-    padding: 6px 35px;
+    padding: 6px 32px;
     font-size: 14px;
     line-height: 20px;
     color: #ffffff;
