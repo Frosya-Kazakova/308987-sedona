@@ -55,14 +55,14 @@ h2 {
     border: none;
 }
 
- .filter input[type="checkbox"] + label::before {
+ .filter input[type="checkbox"]:not(:checked) + label::before {
     content: "";
     display: block;
     width: 18px;
-    height: 18px;
+    height: 17px;
     position: absolute;
     top: 0;
-    left: 0;
+    left: 1px;
     border: 2px solid #ffffff;
     border-radius: 5px;
 }
@@ -142,7 +142,7 @@ h2 {
 
 .sort-by {
     font-size: 12px;
-    color: rgba(0, 0, 0, 0.3);
+
     text-decoration: underline;
 }
 
@@ -153,6 +153,10 @@ h2 {
 }
 
 .sort-by a {
+    color: rgba(0, 0, 0, 0.3);
+}
+
+.sort-by a:visited {
     color: #81b3d2;
 }
 
@@ -381,6 +385,34 @@ html {
     box-sizing: border-box;
 }
 
+.icon {
+    background-image: url(../img/feature-icons.png);
+    background-repeat: no-repeat;
+
+}
+
+.house::before  {
+    display: inline-block;
+    width: 75px;
+    height: 72px;
+    background-position: -10px -10px;
+}
+
+.burger::before {
+  display: inline-block;
+    width: 74px;
+    height: 70px;
+    background-position: -105px -10px;
+}
+
+.gift::before {
+    display: inline-block; {
+    width: 64px;
+    height: 76px;
+    background-position: -199px -10px;
+}
+
+
 .fact {
     list-style: none;
     background-color: #eeeeee;
@@ -449,7 +481,7 @@ html {
     padding-top: 35px;
     padding-bottom: 35px;
     width: 100%;
-    height: 100px;
+    min-height: 90px;
     display: flex;
     justify-content: space-between;
     flex-direction: row;
