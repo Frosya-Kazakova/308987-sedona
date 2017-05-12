@@ -58,13 +58,17 @@ h2 {
  .filter input[type="checkbox"]:not(:checked) + label::before {
     content: "";
     display: block;
-    width: 18px;
+    width: 17px;
     height: 17px;
     position: absolute;
     top: 0;
-    left: 1px;
-    border: 2px solid #ffffff;
-    border-radius: 5px;
+    left: 0px;
+    background-image: url(../img/filter-sprite.png);
+    background-repeat: no-repeat;
+    display: inline-block;
+    width: 22px;
+    height: 22px;
+    background-position: -10px -40px;
 }
 
  .filter input[type="checkbox"]:checked + label::after {
@@ -87,6 +91,8 @@ h2 {
     font-size: 14px;
     color: #ffffff;
     font-weight: normal;
+    width: 1200px;
+    box-sizing: border-box;
 }
 
 .filter-left {
@@ -97,14 +103,15 @@ h2 {
 .filter-left-item {
     list-style: none;
     padding: 0;
-    margin-bottom: 26px;
+    margin-bottom: 25px;
 }
 
 .filter-options {
     margin-top: 27px;
     padding: 0;
+    margin-left: 0;
     border: none;
-    margin-right: 40px;
+    margin-right: 42px;
 }
 
 .filter-title {
@@ -203,8 +210,8 @@ html {
 }
 
 .catalog-container {
-    margin-left: 6%;
-    margin-right: 6%;
+    padding-left: 6%;
+    padding-right: 6%;
 }
 
 .logo {
@@ -490,9 +497,9 @@ html {
     background-color: #ffffff;
 
     padding-top: 35px;
-    padding-bottom: 35px;
+    padding-bottom: 3px;
     width: 100%;
-    min-height: 90px;
+    height: 120px;
     display: flex;
     justify-content: space-between;
     flex-direction: row;
@@ -592,6 +599,7 @@ html {
     background-repeat: no-repeat;
     background-position: center;
     background-size: cover;
+    margin: 0 auto;
 }
 
 .filter-options {
@@ -610,10 +618,9 @@ html {
 }
 
 .search-results {
-    width: 1200px;
     border-bottom: 1px solid #f2f2f2;
-    padding: 32px 0;
-
+    padding-bottom: 32px;
+    padding-top: 32px;
 }
 
 .search-result-number {
@@ -657,6 +664,7 @@ html {
 
 .card-item {
     float: left;
+    width: 650px;
 }
 
 .card-item-title {
@@ -667,7 +675,8 @@ html {
 .type {
     margin-right: 4px;
     display: inline-block;
-    width: 110px;
+    width: auto;
+    vertical-align: top;
 }
 
 .rating {
@@ -686,22 +695,24 @@ html {
 }
 
 .details {
-    margin-top: 18px;
+    margin-top: 13px;
 }
 
 .more-details {
+    display: inline-block;
     text-decoration: none;
     background-color: #81b3d2;
     color: #ffffff;
-    padding: 5px 17px;
-    margin-right: 4px;
+    padding: 3px 17px;
+    margin-right: 2px;
 }
 
 .book-it {
+    display: inline-block;
     text-decoration: none;
     background-color: #766357;
     color: #ffffff;
-    padding: 5px 16px;
+    padding: 3px 16px;
 }
 
 .search-form {
@@ -777,11 +788,11 @@ html {
 }
 
 .adults input[type="text"] {
-    padding: 6px 6px 14px 10px;
+    padding: 3px 10px 13px 17px;
 }
 
 .children input[type="text"] {
-    padding: 6px 6px 14px 10px;
+    padding: 3px 10px 13px 17px;
 }
 
 
@@ -814,7 +825,7 @@ html {
 }
 
 .children .counter {
-    margin-left: 26px;
+    margin-left: 19px;
 }
 
 .search-form fieldset {
@@ -868,7 +879,7 @@ html {
 }
 
 .number-of-people input[type="text"] {
-    width: 28px;
+    width: 15px;
     background-color: #f2f2f2;
 }
 
@@ -966,7 +977,7 @@ html {
 }
 
 .filter-range {
-    width: 316px;
+    width: 317px;
     color: #ffffff;
     text-transform: uppercase;
 }
@@ -1005,6 +1016,12 @@ html {
     line-height: 32px;
     vertical-align: top;
     cursor: pointer;
+}
+
+.price-range {
+    display: inline-block;
+    vertical-align: top;
+    width: auto;
 }
 
 .price-controls .min-price,
