@@ -38,6 +38,30 @@ h2 {
     color: #000000;
 }
 
+.type-item-left {
+    margin: 0 4px 0 0;
+    float: left;
+    padding: 0;
+}
+
+.type-item-left li {
+    list-style-type: none;
+    padding: 0;
+    margin-bottom: 14px;
+}
+
+.type-item-right {
+    float: right;
+    padding: 0;
+    list-style-type: none;
+    margin-top: 37px;
+}
+
+.type-item-left li {
+    list-style-type: none;
+    padding: 0;
+    margin-bottom: 14px;
+}
 
 
 
@@ -111,7 +135,7 @@ h2 {
     padding: 0;
     margin-left: 0;
     border: none;
-    margin-right: 42px;
+    margin-right: 44px;
 }
 
 .filter-title {
@@ -180,7 +204,7 @@ h2 {
 }
 
 html {
-  background-color: #f2f2f2;
+    background-color: #f2f2f2;
 }
 
 
@@ -539,9 +563,7 @@ html {
     width: 400px;
     text-align: center;
     vertical-align: middle;
-
     margin-top: 14px;
-
 }
 
 .footer-hashtag a {
@@ -563,20 +585,20 @@ html {
 }
 
 .copyright {
-   display: inline-block;
-   vertical-align: middle;
-   margin-right: 6px;
-   font-size: 14px;
+    display: inline-block;
+    vertical-align: middle;
+    margin-right: 6px;
+    font-size: 14px;
 }
 
 .footer-copyright-btn {
-   display: inline-block;
-   vertical-align: middle;
+    display: inline-block;
+    vertical-align: middle;
 }
 
 .footer-copyright-btn img {
-   display: inline-block;
-   vertical-align: middle;
+    display: inline-block;
+    vertical-align: middle;
 }
 
 .social-btn {
@@ -653,6 +675,7 @@ html {
     padding-top: 25px;
     padding-bottom: 25px;
     border-bottom: 1px solid #f2f2f2;
+    position: relative;
 }
 
 
@@ -663,23 +686,29 @@ html {
 }
 
 .card-item {
-    float: left;
-    width: 650px;
+    float: right;
+    width: 891px;
 }
 
 .card-item-title {
-    margin-top: 0;
     margin-bottom: 8px;
+    margin-top: 0;
+    display: inline-block;
+    margin-bottom: 8px;
+    width: 538px;
 }
 
 .type {
-    margin-right: 4px;
+    margin-right: 3px;
     display: inline-block;
-    width: auto;
+    width: 110px;
     vertical-align: top;
 }
 
 .rating {
+    position: absolute;
+    top: 30px;
+    right: 74px;
     float: right;
     text-align: right;
 }
@@ -691,7 +720,9 @@ html {
 .rating-number {
     color: #666666;
     background-color: #f2f2f2;
-    padding: 5px 15px;
+    padding: 3px 14px;
+    float: right;
+    margin-top: 13px;
 }
 
 .details {
@@ -699,20 +730,25 @@ html {
 }
 
 .more-details {
-    display: inline-block;
     text-decoration: none;
     background-color: #81b3d2;
     color: #ffffff;
+    margin-right: 3px;
     padding: 3px 17px;
-    margin-right: 2px;
+    margin-right: 7px;
+    vertical-align: top;
+    margin-top: 14px;
+    float: left;
 }
 
 .book-it {
-    display: inline-block;
     text-decoration: none;
     background-color: #766357;
     color: #ffffff;
-    padding: 3px 16px;
+    padding: 3px 17px;
+    vertical-align: top;
+    margin-top: 14px;
+    float: left;
 }
 
 .search-form {
@@ -742,7 +778,7 @@ html {
 }
 
 .date-in input[type="text"] {
-    width: 306px;
+    width: 304px;
     margin-left: 17px;
     box-sizing: content-box;
     font-weight: bold;
@@ -757,7 +793,7 @@ html {
 }
 
 .date-out input[type="text"] {
-    width: 306px;
+    width: 304px;
     margin-left: 14px;
     box-sizing: content-box;
     font-weight: bold;
@@ -765,7 +801,7 @@ html {
     color: #000000;
     font-weight: bold;
     text-transform: uppercase;
-    padding: 10px 30px 10px 10px;
+    padding: 10px 30px 10px 12px;
     outline: none;
     background-color: #f2f2f2;
     border: none;
